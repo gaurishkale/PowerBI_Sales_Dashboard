@@ -1,29 +1,32 @@
-📊 Power BI Project: Sales Dashboard
-I’m thrilled to share my latest Power BI project—a Sales Dashboard that provides key insights into revenue, profit, orders, and product performance! 🚀
-🔍 Project Overview: This dashboard is designed to analyze sales trends, monitor business performance, and help make data-driven decisions effectively.
-🛠 Steps Involved:
-1️⃣ Data Collection & Power Query Transformation Imported sales data from Excel, SQL Server, and other sources. Cleaned and transformed data using Power Query:
-✅ Removed duplicates & handled missing values.
-✅ Changed data types for accuracy.
-✅ Merged and appended tables for a structured data model.
-2️⃣ Data Modeling & Relationships Established relationships between tables: Sales, Products, Customers, Calendar, etc. Optimized data schema using Star Schema for better performance.
-3️⃣ DAX Measures & Calculations
-Created DAX (Data Analysis Expressions) to derive key insights:
-✅ Total Revenue: Total Revenue = SUM(Sales[Revenue])
-✅ Total Profit: Total Profit = SUM(Sales[Profit])
-✅ Total Orders: Total Orders = DISTINCTCOUNT(Sales[OrderID])
-✅ Top 5 Subcategories by Revenue using TOPN() and RANKX()
-✅ Cumulative Sales Trend with CALCULATE(SUM(Sales[Revenue]), DATESYTD(Calendar[Date]))
-4️⃣ Dashboard Design & Visualization
-Built interactive visualizations using bar charts, line graphs, pie charts, and maps. Included key metrics:
-✅ Sales Trend Over Years
-✅ Category-wise & Subcategory-wise Profit
-✅ Geographic Revenue Distribution
-5️⃣ Interactivity & User Experience
-Added slicers & filters for Year, Month, Country, Product Category to allow dynamic analysis. 💡 Key Insights & Business Impact
-✅ Identified best-selling products & top revenue-generating regions.
-✅ Tracked revenue growth over the years.
-✅ Helped businesses analyze profitability and customer trends.
-💬 I’d love to hear your thoughts on this project! Let’s connect and discuss more about Power BI, Data Analytics, and Business Intelligence! 🚀
-#PowerBI #DataAnalytics #SalesDashboard #BusinessIntelligence #DAX #PowerQuery #DataVisualization
+## Sales Dashboard using Power BI
 
+This project presents a comprehensive **Sales Dashboard** developed using **Microsoft Power BI**. The dashboard provides detailed insights into business performance metrics such as total revenue, profit, order volume, and product distribution. It enables dynamic data exploration and performance tracking across various dimensions including time, geography, product categories, and customer demographics.
+
+### Key Features
+
+* **Total Revenue, Profit, Orders, and Customers** summary
+* Interactive filtering by **Year, Month, Country, Gender, Product Category**, and more
+* Visualization of revenue trends over multiple years (2019–2024)
+* Category-wise analysis of **Products, Profit**, and **Revenue**
+* Identification of **Top 5 Product Subcategories** based on revenue
+* Integrated geographic insights using map visualizations
+* Clear, actionable visuals suitable for strategic decision-making
+
+### Technologies Used
+
+* **Power BI Desktop**
+* DAX for calculated measures and KPIs
+* Data modeling and transformation using Power Query
+
+### Dataset
+
+The dataset includes sales transaction records across various regions and product types, capturing metrics such as:
+
+* Revenue
+* Profit
+* Order Volume
+* Customer Demographics
+
+### Objective
+
+The objective of this project is to demonstrate the capability of Power BI in creating interactive, business-focused dashboards that aid in data-driven decision-making. The dashboard is ideal for sales and marketing teams seeking to monitor key performance indicators and uncover patterns in customer and product data.
